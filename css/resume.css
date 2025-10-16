@@ -100,3 +100,40 @@ footer h2 {
 section {
     margin-bottom: 25px;
 }
+.toggle-btn {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #005fa3;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+}
+.tooltip {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: opacity 0.2s ease;
+}
+#competences li span:hover {
+  cursor: pointer;
+}
+
+

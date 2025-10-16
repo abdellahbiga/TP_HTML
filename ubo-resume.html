@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/resume.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
   </head>
 
   <body>
@@ -34,51 +35,66 @@
         <p>Développeur passionné par le web et les nouvelles technologies, je conçois des applications modernes, performantes et accessibles. Toujours en quête d'apprentissage, j’aime relever de nouveaux défis techniques.</p>
       </section>
 
+      <section id="formation">
+        <h2>Formation</h2>
+
+        <article class="toggle-section">
+          <div class="section-header">
+            <h3>Master 2 Développement Logiciel – UBO</h3>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="details">
+            <p><em>2025 - 2026</em></p>
+            <p>Spécialisation en développement logiciel des systèmes d'information.</p>
+          </div>
+        </article>
+
+        <article class="toggle-section">
+          <div class="section-header">
+            <h3>Licence Informatique – Université de Namek</h3>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="details">
+            <p><em>2021 - 2024</em></p>
+            <p>Formation en algorithmique, programmation orientée objet et conception web.</p>
+          </div>
+        </article>
+      </section>
+
       <section id="experience">
         <h2>Expériences Professionnelles</h2>
 
-        <article itemscope itemtype="https://schema.org/JobPosting">
-          <h3 itemprop="title">Développeur Front-End – Capsule Corp</h3>
-          <p><em><time itemprop="datePosted" datetime="2025-07">Juillet - Août 2025</time></em></p>
-          <p itemprop="description">Création d’interfaces web dynamiques avec React et intégration d’API REST.</p>
+        <article itemscope itemtype="https://schema.org/JobPosting" class="toggle-section">
+          <div class="section-header">
+            <h3 itemprop="title">Développeur Front-End – Capsule Corp</h3>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="details">
+            <p><em><time itemprop="datePosted" datetime="2025-07">Juillet - Août 2025</time></em></p>
+            <p itemprop="description">Création d’interfaces web dynamiques avec React et intégration d’API REST.</p>
+          </div>
         </article>
 
-        <article itemscope itemtype="https://schema.org/JobPosting">
-          <h3 itemprop="title">Stagiaire Développeur Web – Kame House Studio</h3>
-          <p><em><time itemprop="datePosted" datetime="2024-07">Juillet 2024</time></em></p>
-          <p itemprop="description">Participation à la refonte du site e-commerce, optimisation du référencement et du design responsive.</p>
+        <article itemscope itemtype="https://schema.org/JobPosting" class="toggle-section">
+          <div class="section-header">
+            <h3 itemprop="title">Stagiaire Développeur Web – Kame House Studio</h3>
+            <button class="toggle-btn">+</button>
+          </div>
+          <div class="details">
+            <p><em><time itemprop="datePosted" datetime="2024-07">Juillet 2024</time></em></p>
+            <p itemprop="description">Participation à la refonte du site e-commerce, optimisation du référencement et du design responsive.</p>
+          </div>
         </article>
       </section>
 
       <section id="competences">
         <h2>Compétences</h2>
-        <dl>
-          <dt>Langages</dt>
-          <dd itemprop="knowsAbout">HTML, CSS, JavaScript, Java, Python, C/C++/C#</dd>
-
-          <dt>Frameworks</dt>
-          <dd itemprop="knowsAbout">React, Spring Boot, Laravel</dd>
-
-          <dt>Outils</dt>
-          <dd itemprop="knowsAbout">Git, Docker, VS Code, Linux</dd>
-        </dl>
-      </section>
-
-      <section id="formation">
-        <h2>Formation</h2>
-        <ul>
-          <li>
-            <strong itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-              <span itemprop="name">Université de Bretagne Occidentale</span>
-            </strong>
-            – Master 2 Développement Logiciel des Systèmes d’Information (2025 - 2026)
-          </li>
-          <li>
-            <strong itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-              <span itemprop="name">Université de Namek</span>
-            </strong>
-            – Licence Informatique (2021 - 2024)
-          </li>
+        <ul class="skills">
+          <li><span data-description="Langage de balisage pour le web.">HTML</span></li>
+          <li><span data-description="Langage de style utilisé pour la mise en page.">CSS</span></li>
+          <li><span data-description="Langage de programmation pour le web.">JavaScript</span></li>
+          <li><span data-description="Framework front-end moderne.">React</span></li>
+          <li><span data-description="Framework Java côté serveur.">Spring Boot</span></li>
         </ul>
       </section>
 
