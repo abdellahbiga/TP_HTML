@@ -128,12 +128,33 @@ section {
   overflow: hidden;
   opacity: 0;
 }
+.etoiles {
+  margin-left: 10px;
+  color: #f5c518;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.etoiles:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+#competences dd .competence-item {
+  display:inline-block; margin:6px 10px;
+}
+#competences dd .comp-name {
+  cursor:pointer;
+}
 .tooltip {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  transition: opacity 0.2s ease;
+  transition: opacity 0.15s ease;
 }
-#competences li span:hover {
-  cursor: pointer;
+#competenceChart {
+  display: block;
+  margin: 30px auto;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 
 
